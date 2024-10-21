@@ -1,11 +1,8 @@
 package com.remote.server;
 
 import com.remote.client.InterfaceClient;
-import java.awt.BorderLayout;
 import java.awt.Graphics2D;
-import java.awt.Image;
 import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
@@ -16,10 +13,7 @@ import java.util.Map;
 import java.util.Vector;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
 
 public class ImageProcessingServer extends UnicastRemoteObject implements InterfaceServer {
     private final ArrayList<InterfaceClient> clients;
